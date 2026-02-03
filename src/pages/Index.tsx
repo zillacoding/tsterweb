@@ -33,7 +33,7 @@ const Index = () => {
 
         {/* Subtle tagline */}
         <p className="mt-6 text-muted-foreground text-lg md:text-xl font-medium">
-          The meme coin that slaps different 🚀
+          This was promised 3000 years ago
         </p>
       </div>
 
