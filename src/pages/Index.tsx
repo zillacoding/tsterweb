@@ -12,14 +12,23 @@ const Index = () => {
 
       {/* Floating Stars of David Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <StarOfDavid className="absolute top-[10%] left-[5%] w-24 h-24 text-primary/10 animate-float" style={{ animationDelay: '0s' }} />
-        <StarOfDavid className="absolute top-[20%] right-[10%] w-32 h-32 text-primary/15 animate-float" style={{ animationDelay: '1s' }} />
-        <StarOfDavid className="absolute top-[50%] left-[8%] w-20 h-20 text-primary/10 animate-float" style={{ animationDelay: '2s' }} />
-        <StarOfDavid className="absolute top-[60%] right-[5%] w-28 h-28 text-primary/12 animate-float" style={{ animationDelay: '0.5s' }} />
-        <StarOfDavid className="absolute top-[80%] left-[15%] w-16 h-16 text-primary/8 animate-float" style={{ animationDelay: '1.5s' }} />
-        <StarOfDavid className="absolute top-[75%] right-[20%] w-24 h-24 text-primary/10 animate-float" style={{ animationDelay: '2.5s' }} />
-        <StarOfDavid className="absolute top-[35%] left-[85%] w-20 h-20 text-primary/12 animate-float" style={{ animationDelay: '3s' }} />
-        <StarOfDavid className="absolute top-[5%] left-[50%] w-16 h-16 text-primary/8 animate-float" style={{ animationDelay: '1.8s' }} />
+        {/* Left side stars */}
+        <StarOfDavid className="absolute top-[15%] left-[3%] w-20 h-20 text-primary/10 animate-float" style={{ animationDelay: '0s' }} />
+        <StarOfDavid className="absolute top-[45%] left-[6%] w-24 h-24 text-primary/12 animate-float" style={{ animationDelay: '2s' }} />
+        <StarOfDavid className="absolute top-[75%] left-[4%] w-18 h-18 text-primary/8 animate-float" style={{ animationDelay: '1.5s' }} />
+        
+        {/* Right side stars */}
+        <StarOfDavid className="absolute top-[25%] right-[4%] w-28 h-28 text-primary/10 animate-float" style={{ animationDelay: '1s' }} />
+        <StarOfDavid className="absolute top-[55%] right-[6%] w-20 h-20 text-primary/12 animate-float" style={{ animationDelay: '0.5s' }} />
+        <StarOfDavid className="absolute top-[85%] right-[3%] w-22 h-22 text-primary/10 animate-float" style={{ animationDelay: '2.5s' }} />
+        
+        {/* Far left edge */}
+        <StarOfDavid className="absolute top-[35%] left-[1%] w-16 h-16 text-primary/8 animate-float" style={{ animationDelay: '3s' }} />
+        <StarOfDavid className="absolute top-[65%] left-[2%] w-14 h-14 text-primary/6 animate-float" style={{ animationDelay: '1.8s' }} />
+        
+        {/* Far right edge */}
+        <StarOfDavid className="absolute top-[12%] right-[2%] w-16 h-16 text-primary/8 animate-float" style={{ animationDelay: '0.8s' }} />
+        <StarOfDavid className="absolute top-[70%] right-[1%] w-18 h-18 text-primary/10 animate-float" style={{ animationDelay: '2.2s' }} />
       </div>
 
       {/* Hero Section */}
@@ -142,8 +151,13 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <div className="relative z-10 py-8 text-center text-muted-foreground/50 text-sm">
-        © 2025 Dew Coin
+      <div className="relative z-10 py-12 text-center">
+        <p className="font-display text-2xl md:text-3xl text-primary tracking-widest mb-4">
+          Ca: TBA
+        </p>
+        <p className="text-muted-foreground/50 text-sm">
+          © 2025 Dew Coin
+        </p>
       </div>
     </div>
   );
