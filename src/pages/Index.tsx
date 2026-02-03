@@ -1,5 +1,6 @@
 import dewMascot from "@/assets/dew-mascot.png";
 import { Wallet, CreditCard, Rocket } from "lucide-react";
+import StarOfDavid from "@/components/StarOfDavid";
 
 const Index = () => {
   return (
@@ -7,6 +8,18 @@ const Index = () => {
       {/* Animated Sunburst Background */}
       <div className="fixed inset-0 flex items-center justify-center">
         <div className="sunburst-bg animate-sunburst w-[200vmax] h-[200vmax] opacity-60" />
+      </div>
+
+      {/* Floating Stars of David Background */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <StarOfDavid className="absolute top-[10%] left-[5%] w-24 h-24 text-primary/10 animate-float" style={{ animationDelay: '0s' }} />
+        <StarOfDavid className="absolute top-[20%] right-[10%] w-32 h-32 text-primary/15 animate-float" style={{ animationDelay: '1s' }} />
+        <StarOfDavid className="absolute top-[50%] left-[8%] w-20 h-20 text-primary/10 animate-float" style={{ animationDelay: '2s' }} />
+        <StarOfDavid className="absolute top-[60%] right-[5%] w-28 h-28 text-primary/12 animate-float" style={{ animationDelay: '0.5s' }} />
+        <StarOfDavid className="absolute top-[80%] left-[15%] w-16 h-16 text-primary/8 animate-float" style={{ animationDelay: '1.5s' }} />
+        <StarOfDavid className="absolute top-[75%] right-[20%] w-24 h-24 text-primary/10 animate-float" style={{ animationDelay: '2.5s' }} />
+        <StarOfDavid className="absolute top-[35%] left-[85%] w-20 h-20 text-primary/12 animate-float" style={{ animationDelay: '3s' }} />
+        <StarOfDavid className="absolute top-[5%] left-[50%] w-16 h-16 text-primary/8 animate-float" style={{ animationDelay: '1.8s' }} />
       </div>
 
       {/* Hero Section */}
@@ -65,14 +78,13 @@ const Index = () => {
               <p className="text-muted-foreground">
                 Get the Phantom wallet from{" "}
                 <a 
-                  href="https://phantom.app" 
+                  href="https://phantom.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-semibold"
                 >
-                  phantom.app
+                  phantom.com
                 </a>
-                {" "}to store your $DEW tokens securely.
               </p>
             </div>
           </div>
@@ -122,7 +134,7 @@ const Index = () => {
                 >
                   pump.fun
                 </a>
-                {" "}and swap your SOL for $DEW. Welcome aboard! 🚀
+                {" "}and swap your SOL for $DEW.
               </p>
             </div>
           </div>
