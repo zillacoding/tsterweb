@@ -35,7 +35,7 @@ const Index = () => {
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
         {/* Title */}
         <h1 className="font-display text-8xl md:text-9xl lg:text-[12rem] text-foreground animate-pulse-glow tracking-wider mb-4">
-          DEW
+          Dew
         </h1>
 
         {/* Floating Mascot */}
