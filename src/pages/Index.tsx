@@ -58,13 +58,6 @@ const Index = () => {
         <p className="mt-6 text-muted-foreground text-lg md:text-xl font-medium">
           This was promised 3000 years ago
         </p>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 animate-bounce">
-          <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-primary rounded-full" />
-          </div>
-        </div>
       </div>
 
       {/* How to Buy Section */}
